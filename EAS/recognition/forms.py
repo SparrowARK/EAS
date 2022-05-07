@@ -3,13 +3,12 @@ from django.contrib.auth.models import User
 from django import forms
 #from django.contrib.admin.widgets import AdminDateWidget
 
+
 class usernameForm(forms.Form):
 	username=forms.CharField(max_length=30)
 
 
-
 class DateForm(forms.Form):
-	# username = forms.CharField(max_length=30)
 	date=forms.DateField(widget = forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")))
 
 

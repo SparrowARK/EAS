@@ -78,10 +78,9 @@
         
         <th scope="col" >Employee</th>
         <th scope="col">Present</th>
-        <th scope="col">Time in</th>
-        <th scope="col">Time out </th>
+        <th scope="col">Check in time</th>
+        <th scope="col">Check out time</th>
         <th scope="col">Hours </th>
-<!--        <th scope="col"> Break Hours </th>-->
     </tr>
 </thead>
 <tbody style="border: solid white; background-color:white;">
@@ -105,19 +104,10 @@
        <td> - </td>
        {% endif %}
            <td> {{item.hours}}</td>
-<!--           <td> {{item.break_hours}}</td>-->
     </tr>
     {% endfor %}
 </tbody>
 </table>
-
-<!-- <div class="card" style=" margin-top: 5em; margin-bottom: 10em;">-->
-<!--  <img class="card-img-top" src="{% static 'recognition/img/attendance_graphs/hours_vs_employee/1.png'%}" alt="Card image cap">-->
-<!--  <div class="card-body">-->
-<!--    <p class="card-text" style="text-align: center;">Number of hours worked each day.</p>-->
-<!--  </div>-->
-<!--</div>-->
-
 
 
 
